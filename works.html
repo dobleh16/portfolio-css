@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .details {
+            display: none;
+            margin-top: 10px;
+        }
+        .details img {
+            width: 30%;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <nav class="nav-bar">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="works.html" class="nav-item">Works</a>
+            <a href="blog.html" class="nav-item">Blog</a>
+            <a href="about.html" class="nav-item">About</a>
+            <a href="contact.html" class="nav-item">Contact</a>
+        </nav>
+        
+        <section class="content">
+            <h1>My Works</h1>
+            <p>Here you can find some of the projects I have worked on.</p>
+
+            <div class="works-container">
+                <div class="work-item">
+                    <img src="img/work1.png" alt="Designing Dashboard">
+                    <div class="work-info">
+                        <h2 onclick="toggleDetails('dashboard-details')">Designing Dashboard</h2>
+                        <p>2020</p>
+                        <p>A modern and dynamic dashboard interface that enhances data visualization and user interaction.</p>
+                        <div id="dashboard-details" class="details">
+                            <p>Designed for intuitive navigation and real-time analytics, this project focused on creating a dashboard that is both visually appealing and functionally robust. It features an interactive UI, customizable widgets, and a dark/light mode for enhanced user experience.</p>
+                            <p>Here are some key design elements:</p>
+                            <img src="img/dashboard1.png" alt="Dashboard Main View">
+                            <p>The main dashboard screen, showcasing an overview of user analytics, key performance indicators, and real-time charts.</p>
+                            <img src="img/dashboard2.png" alt="Customizable Widgets">
+                            <p>Users can customize widgets to display relevant information, allowing for a more personalized experience.</p>
+                            <img src="img/dashboard3.png" alt="Dark Mode UI">
+                            <p>Dark mode implementation for better visibility and reduced eye strain in low-light environments.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <img src="img/work2.png" alt="Vibrant Portraits of 2020">
+                    <div class="work-info">
+                        <h2 onclick="toggleDetails('portraits-details')">Vibrant Portraits of 2020</h2>
+                        <p>2018</p>
+                        <p>A creative photography project capturing diverse emotions and cultural expressions.</p>
+                        <div id="portraits-details" class="details">
+                            <p>This photography series explores human expressions through a combination of vivid colors, high contrast, and dynamic compositions. Each portrait tells a unique story, reflecting emotions ranging from joy and serenity to intensity and mystery.</p>
+                            <p>Highlighted works:</p>
+                            <img src="img/portrait1.jpeg" alt="Portrait of a Smiling Woman">
+                            <p>A high-contrast portrait of a smiling woman, representing the energy and positivity of urban life.</p>
+                            <img src="img/portrait2.webp" alt="Dramatic Lighting Portrait">
+                            <p>Playing with shadows and highlights, this portrait captures deep emotions through a carefully designed lighting setup.</p>
+                            <img src="img/portrait3.jpeg" alt="Cultural Expression in Portraits">
+                            <p>A fusion of traditional and contemporary aesthetics, emphasizing the beauty of cultural diversity.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="work-item">
+                    <img src="img/work3.png" alt="36 Days of Malayalam Type">
+                    <div class="work-info">
+                        <h2 onclick="toggleDetails('typography-details')">36 Days of Malayalam Type</h2>
+                        <p>2018</p>
+                        <p>An artistic exploration of Malayalam typography and calligraphic styles.</p>
+                        <div id="typography-details" class="details">
+                            <p>This project was part of the global '36 Days of Type' challenge, where designers create unique letterforms every day. Inspired by Malayalam script, each letter was carefully crafted to reflect cultural and artistic influences while maintaining legibility.</p>
+                            <p>Featured typography designs:</p>
+                            <img src="img/type1.webp" alt="Stylized Malayalam Letter">
+                            <p>A highly stylized Malayalam letterform that integrates traditional motifs with modern aesthetics.</p>
+                            <img src="img/type2.webp" alt="Calligraphic Exploration">
+                            <p>Experimenting with fluid strokes and brush techniques to enhance the organic nature of the script.</p>
+                            <img src="img/type3.webp" alt="Digital Lettering">
+                            <p>Combining digital techniques with traditional calligraphy to create a visually striking composition.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="#"><img src="img/icons/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="img/icons/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="img/icons/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+        <p>Copyright ©2020 All rights reserved</p>
+    </footer>
+
+    <script>
+        function toggleDetails(id) {
+            var details = document.getElementById(id);
+            if (details.style.display === "none" || details.style.display === "") {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
